@@ -10,20 +10,24 @@ import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles/NavBarStyles";
 import {ThemeContext} from './contexts/ThemeContext';
 import {withLanguageContext} from './contexts/LanguageContext';
+import {LanguageContext} from './contexts/LanguageContext';
 
 const content = {
   english: {
     search: 'Search',
-    flag: "🍕"
+    flag: "🍕",
+    title: 'App Title'
 
   },
   french: {
     search: 'Chercher',
-    flag: '🍟'
+    flag: '🍟',
+    title: "Titre de l'application"
   },
   spanish: {
     search: 'Buscar',
-    flag: '🍸'
+    flag: '🍸',
+    title: "Título de la aplicación"
   }
 };
 
@@ -44,7 +48,7 @@ class Navbar extends Component {
             <span>{flag}</span>
             </IconButton>
             <Typography className={classes.title} variant='h6' color='inherit'>
-              App Title
+            App Title
             </Typography>
             <Switch onChange={toggleTheme} />
             <div className={classes.grow} />

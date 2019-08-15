@@ -22,7 +22,7 @@ class Navbar extends Component {
         <AppBar position="static" color={isDarkMode ? 'default' : 'primary'}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">
-            <span>😃</span>
+            <span>✴</span>
             </IconButton>
             <Typography className={classes.title} variant='h6' color='inherit'>
               App Title

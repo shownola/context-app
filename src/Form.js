@@ -70,15 +70,6 @@ function Form(props){
   );
 }
 
-// class Form extends Component {
-//   static contextType = LanguageContext;
-//   render(){
-//
-//     return(
-//
-//
-//     );
-//   }
-// }
+
 
 export default withStyles(styles)(Form);
